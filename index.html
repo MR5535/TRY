@@ -793,7 +793,7 @@ row.appendChild(box);
 lastTeamOrderMap = currentOrderMap;
 
 const now = Date.now();
-if (locked && startTime && now - startTime >= 6000) { // 游戏开始后 60 秒
+if (locked && startTime && now - startTime >= 60000) { // 游戏开始后 60 秒
   const podium = document.getElementById("podium");
   podium.style.display = "flex";
   podium.innerHTML = ""; // ✅ 加上这一行，先清空原有 podium 内容
